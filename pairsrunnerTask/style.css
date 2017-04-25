@@ -1,0 +1,142 @@
+/* Variabes */
+/* Mixin's */
+body {
+  background: rgb(36, 37, 22);
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+#seconds, #tens {
+  font-size: 2em;
+}
+
+button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -khtml-border-radius: 5px;
+  background: #82d2e5;
+  color: #fff;
+  border: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  border: solid 1px #fff;
+  color: #82d2e5;
+}
+
+#container {
+  width: 519px;
+  margin: 10px auto;
+}
+#container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[data-view="card"] {
+  transform: rotateY(180deg);
+  width: 90px;
+  height:  59px;
+  border: solid 1px #d3cece;
+  border-radius: 5px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px), linear-gradient(225deg, #f3f3f3 22px, #fff 22px, #fff 24px, transparent 24px, transparent 67px, #fff 67px, #fff 69px, transparent 69px) 0 64px;
+  background-color: #f3f3f3;
+  background-size: 64px 128px;
+}
+
+.flipped {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+
+.reverse {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(180deg);
+}
+
+.correct {
+  opacity: .5;
+  cursor: default;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+
+/* Icons */
+.correct[data-item="butterfly"],
+.flipped[data-item="butterfly"] {
+  background: url('img/butterfly.png') left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="coackroach"],
+.flipped[data-item="coackroach"] {
+  background: url('img/coackroach.png') left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="ant"],
+.flipped[data-item="ant"] {
+  background: url('img/ant.png') left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="fly"],
+.flipped[data-item="fly"] {
+  background: url('img/fly.png') left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="spider"],
+.flipped[data-item="spider"] {
+  background: url('img/spider.png') left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="spider"],
+.flipped[data-item="spider"] {
+  background: url('img/spider.png') left center no-repeat #fff;
+  background-size: contain;
+}
+
+.correct[data-item="worm"],
+.flipped[data-item="worm"] {
+  background: url('img/worm.png') left center no-repeat #fff;
+  background-size: contain;
+}
+#element_to_pop_up { 
+    background-color:#fff;
+    border-radius:15px;
+    color:#000;
+    display:none; 
+    padding:20px;
+    min-width:400px;
+    min-height: 180px;
+}
+.b-close{
+    cursor:pointer;
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+
